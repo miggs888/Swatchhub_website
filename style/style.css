@@ -3,15 +3,61 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+h3 {
+    font-family: moret, serif;
+    font-weight: 800;
+    font-style: italic;
+}
+.hero {
+    background: #fff;
+}
+.img__hero {
+    max-width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 nav {
     color: var(--blue);
-    font-size: 110%;
+    font-size: 80%;
     text-align:left;
     position: fixed;
     top: 0;
     width: 100%;
     left: -20px;
+    letter-spacing: 4px;;
+    line-height: 25px;
 }
 ul {
     list-style-type: none;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content__work, 
+.content__services,
+.content__swatchbuddy,
+.content__upcycle,
+.content__about,
+.content__clients {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    padding: 1rem;
+}
+.img {
+    max-width: 100%;
+    display: inline;
+}
+footer {
+    background: #000;
+    color: #fff;
 }
