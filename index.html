@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="images/svg" href="images/SW_lgoo_white.svg">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SWATCHHUB</title>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 150, 75);
+        </script>
+    <script src="scripts/p5.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/fti5kdi.css">
     <link rel="stylesheet" href="style/style.css" type="text/css" charset="utf-8" />
     <link href="style/normalize.css" rel="stylesheet" />
@@ -25,9 +33,9 @@
      </nav>
      <section class=hero> 
          <img class=img__hero src="images/SW_lgoo.svg">
-     </section>
-        <section id=work class=content__work>
-            <div class=content>
+     </section class=content>
+        <section id=work>
+            <div class=content__work>
                     <img class=img__body src="images/layflatSix.png">
                     <article>
                         <h3>work</h3>
@@ -35,8 +43,8 @@
                     </article>
                 </div>
             </section>  
-        <section id=services class=content__services>
-            <div class=content>
+        <section id=services>
+            <div class=content__services>
                     <article>
                         <h3>services</h3>
                         <p>At SwatchHub we lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid- unt ut laoreet dolore magna aliquam erat volutpat. </p> <p>Ut wisi enim ad minim veniam,quis nostrud exerci tation ulla - mcorper suscipit lobortis nisl ut aliquip ex ea commodo con - sequat.</p> <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignis- sim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -44,8 +52,8 @@
                     <img class=img__body src="images/layflatSix.png">
                 </div>
             </section>  
-        <section id=swatchbuddy class=content__swatchbuddy>
-            <div class="content">
+        <section id=swatchbuddy>
+            <div class=content__swatchbuddy>
                     <img class=img__body src="images/layflatSix.png">
                     <article>
                         <h3>swatchbuddy</h3>
@@ -53,8 +61,8 @@
                     </article>
                 </div>
             </section>  
-        <section id=upcycle class=content__upcycle>
-            <div class="content">
+        <section id=upcycle>
+            <div class=content__upcycle>
                     <article>
                         <h3>upcycle</h3>
                         <p>At SwatchHub we lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid- unt ut laoreet dolore magna aliquam erat volutpat. </p> <p>Ut wisi enim ad minim veniam,quis nostrud exerci tation ulla - mcorper suscipit lobortis nisl ut aliquip ex ea commodo con - sequat.</p> <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignis- sim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -62,8 +70,8 @@
                     <img class=img__body src="images/layflatSix.png">
                 </div>
             </section>  
-        <section id=about class=content__about>
-            <div class="content">
+        <section id=about>
+            <div class=content__about>
                     <img class=img__body src="images/layflatSix.png">
                     <article>
                         <h3>about</h3>
@@ -71,16 +79,18 @@
                     </article>
                 </div>
             </section>  
-        <section id=clients class=content__clients>
+        <section id=clients>
+            <div class=content__clients>
                     <img class=img__body src="images/layflatSix.png">
+                </div>
             </section>  
     </div>
 
     <footer id=contact>
-        <img class="img__hero" src="images/SW_lgoo_white.svg">
-        <p>swatch@swatchhub.com</p>
-        <p>(646) 623-4942</p>
+        <img class="img__hero__white" src="images/SW_lgoo_white.svg">
+        <a href="mailto:swatch@swatchhub.com" class=footerDetail>swatch@swatchhub.com</a> 
+        <a href="tel:1-646-623-4942" class=footerDetail>(646) 646-4942</a>
     </footer>
-    <script src="vue.js"></script>
+    <script src="scripts/vue.js"></script>
     <script src="scripts/main.js"></script>
   </body>
